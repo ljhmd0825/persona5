@@ -157,7 +157,7 @@ export default class BoxText {
         ctx.save();
         ctx.globalCompositeOperation = 'destination-over';
         ctx.drawImage(borderCanvas, 0, 0);
-
+        ctx.globalAlpha = 0.5;
         const step = canvasWidth / 10;
         let width = step;
         let isRed = true;
